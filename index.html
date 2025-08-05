@@ -1,19 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- App url   -->
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Questo è il progetto per la 1F </h1>
-        <iframe src="https://scratch.mit.edu/projects/963931986/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    </main>
-	<script src="index.js"></script>
-  </body>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto della 1F – Il Sommozzatore</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background: #005f73;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: calc(402 / 485 * 100%); /* rapporto originale */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #e0fbfc;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Istituto d’Istruzione Secondaria Superiore Alpi‑Montale – Rutigliano (BA)</h1>
+  </header>
+  <main>
+    <h2>Progetto della 1F – Submarino!</h2>
+    <p>In questo gioco il protagonista è un <strong>sommozzatore</strong> che deve raccogliere i <strong>pesci</strong> per fare punti e evitare gli <strong>squali</strong> per non perdere. Buon divertimento!</p>
+    <div class="iframe-container">
+      <iframe src="https://scratch.mit.edu/projects/963931986/embed"
+              allowtransparency="true"
+              scrolling="no"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+  <footer>
+    Creato dagli studenti della classe 1F – Liceo Scientifico Alpi‑Montale di Rutigliano
+  </footer>
+  <script src="index.js"></script>
+</body>
 </html>
